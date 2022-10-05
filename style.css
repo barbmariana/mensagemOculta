@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    background: linear-gradient(to right, hsl(192, 98%, 18%),hsl(193, 18%, 56%), hsl(192, 98%, 18%));
+}
+#content{
+    width: 940px;
+    height:530px;
+    margin:50px auto;
+    background-image:url(/img/backg.png);
+    background-size: 940px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#content h1{
+    margin-top: 100px;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+
