@@ -83,6 +83,20 @@ p{
     text-align: center;
     border: none;
 }
+ #submit{
+    width: 70px;
+    color: white;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+
+
+}
 #messagebox{
     display: flex;
     justify-content: center;
