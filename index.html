@@ -9,15 +9,36 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');</style>
 </head>
 <body>
-    <script src="script.js"></script>
-
     <!-- Here go the main content -->
     <main id="content">   
         <div id="info"> 
         <h1>Mensagem Oculta</h1>
-        <h2>Criptografando e Descriptografando</h2>
+        <h2>Codificando e Decodificando</h2>
         <p>O mundo está em guerra! Você deve passar uma mensagem secreta para o presidente de seu país que está do outro lado do mundo. Que tal cifrar essa mensagem para ela não ser interceptada?</p>
         </div>
+    <!-- Here go the form -->
+
+        <form class="decode">
+            <div id="caixa1">
+                <textarea name="message" id="message" cols="40" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                <fieldset>
+                    <legend>Método Escolhido</legend>
+                    <select name="metodo" id="metodo">
+                        <option value="cifradecesar">Cifra de Cesar</option>
+                        <option value="base64">Base 64</option>
+                    </select>
+                </fieldset>
+            </div>
+            <fieldset id="codebox">
+                <label for="radio-codificar"><input type="radio"  value="codificar" id="radio-codificar" name="code">Codificar</label>
+					
+                <label for="radio-decodificar"><input type="radio" value="decodificar" id="radio-decodificar" name="code"> Decodificar</label>
+            </fieldset>
+            <div id="messagebox">
+                <textarea name="messagec" id="messagec" cols="70" rows="3"></textarea>
+            </div>
+        </form>
+
 
     </main>
 

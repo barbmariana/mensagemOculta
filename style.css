@@ -1,6 +1,10 @@
 body{
     margin: 0;
     background: linear-gradient(to right, hsl(0, 0%, 0%),hsl(0, 91%, 27%), hsl(0, 0%, 0%));
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 4px #000000;
+
+
 }
 #content{
     width: 940px;
@@ -21,10 +25,6 @@ body{
     text-align: center;
     width: 700px;
     color:white;
-    font-family: 'Press Start 2P', cursive;
-    text-shadow: 2px 2px 4px #000000;
-
-
 
 }
 h1{
@@ -43,4 +43,59 @@ p{
     line-height: 15px;
 
 
+}
+#caixa1{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    color: white;
+    padding: 5px 20px 20px 20px;
+}
+#caixa1 textarea{
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px doubler rgb(46, 188, 100); 
+    border-radius: 10px;
+    text-align: center;
+}
+
+#caixa1 fieldset{
+    text-align: center;
+    margin-left: 10px;
+    border: none;
+}
+#caixa1 select{
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px doubler rgb(46, 188, 100); 
+    border-radius: 10px;
+}
+#codebox {
+    color: white;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px doubler rgb(46, 188, 100); 
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+#messagebox{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: 10px auto;
+}
+#messagebox textarea{
+    background-color: transparent;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px doubler rgb(46, 188, 100); 
+    border: none;
+    color: white;
+    border-radius: 10px;
 }
