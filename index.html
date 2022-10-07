@@ -29,13 +29,26 @@
                         <option value="cifradecesar">Cifra de Cesar</option>
                         <option value="base64">Base 64</option>
                     </select>
+                    <select name="incremento" id="incremento">
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                        <option value="1">6</option>
+                        <option value="1">7</option>
+                        <option value="1">8</option>
+                        <option value="1">9</option>
+
+
+                    </select>
                 </fieldset>
             </div>
             <fieldset id="codebox">
                 <label for="radio-codificar"><input type="radio"  value="codificar" id="radio-codificar" name="code">Codificar</label>
 					
                 <label for="radio-decodificar"><input type="radio" value="decodificar" id="radio-decodificar" name="code"> Decodificar</label>
-             <input type="submit" id="submit" value="Enviar">  
+             <input type="submit" id="submit" value="Enviar" onclick="enviar()">  
             </fieldset>
 
     
@@ -44,6 +57,11 @@
                 <p></p>    
             </div>
         </form>
+        <script>
+            function enviar(){
+                alert("Mensagem enviada!")
+            }
+        </script>
     </main>
 </body>
 </html>
