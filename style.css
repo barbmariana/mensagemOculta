@@ -89,6 +89,7 @@ p{
     height: 30px;
     border: none;
     cursor: pointer;
+    transition: 1s all;
     border-radius: 20px;
     background-color: transparent;
     box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
@@ -96,6 +97,11 @@ p{
     -webkit-backdrop-filter: blur( 13.5px );
 
 }
+#submit:hover{
+    background-color:darkslategray;
+    transform: scale(1.2);
+}
+
 #messagebox{
     padding: 3px;
     padding-left: 20px;
