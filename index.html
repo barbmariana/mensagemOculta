@@ -25,12 +25,12 @@
             <div id="caixa1">
                 <textarea name="message" id="message" cols="40" rows="5" placeholder="Escreva sua mensagem..."></textarea>
                 <fieldset>
-                    <legend>Método Escolhido</legend>
-                    <select name="metodo" id="metodo">
-                        <option id="cifrac"value="cifradecesar">Cifra de Cesar</option>
-                        <option value="base64" id="base64">Base 64</option>
-                    </select>
-                    <select name="incremento" id="incremento" >
+                    <div id="metododiv">
+                        <legend>Método Escolhido</legend>
+                        <label for="radio-cifra"> <input type="radio" value="cifradecesar" id="radio-cifra" name="metodo" onclick="incremento.style.display='inline'">Cifra de Cesar</label>
+                        <label for="radio-base64"> <input type="radio" value="base64" id="radio-base64" name="metodo" onclick="incremento.style.display='none'">Base 64</label>
+                    </div>
+                    <select name="incremento" id="incremento">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -46,8 +46,8 @@
             <fieldset id="codebox">
                 <label for="radio-codificar"><input type="radio"  value="codificar" id="radio-codificar" name="code">Codificar</label>
 					
-                <label for="radio-decodificar"><input type="radio" value="decodificar" id="radio-decodificar" name="code"> Decodificar</label>
-             <input type="button" id="submit" value="Enviar" onclick="enviar()">  
+                <label for="radio-decodificar"><input type="radio" value="decodificar" id="radio-decodificar" name="code" > Decodificar</label>
+             <input type="button" id="submit" value="Enviar">  
             </fieldset>
 
     
