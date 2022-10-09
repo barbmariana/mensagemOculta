@@ -44,19 +44,19 @@
                 </fieldset>
             </div>
             <fieldset id="codebox">
-                <label for="radio-codificar"><input type="radio"  value="codificar" id="radio-codificar" name="code">Codificar</label>
-					
-                <label for="radio-decodificar"><input type="radio" value="decodificar" id="radio-decodificar" name="code" > Decodificar</label>
-             <input type="button" id="submit" value="Enviar">  
-            </fieldset>
+                <input type="radio"  value="codificar" id="codificador" name="code" onclick="botao.innerText='Codificando'">
+                <label for="codificador">Codificar</label>
+                <input type="radio" value="decodificar" id="decodificador" name="code" onclick="botao.innerText='Decodificando'">
+                <label for="decodificador"> Decodificar</label>
+            <button id="botao" > Codificar </button>            
+        </fieldset>
 
     
         <!-- Here go the decode text -->
             <div id="messagebox">
                 <p></p>    
             </div>
-        </form>
-     
+        </form>     
     </main>
 </body>
 </html>

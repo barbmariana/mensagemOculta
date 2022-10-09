@@ -88,8 +88,8 @@ p{
     font-size: 8px;
     margin-bottom: 10px;
 }
- #submit{
-    width: 70px;
+ #botao{
+    width: 120px;
     color: white;
     height: 30px;
     border: none;
@@ -100,9 +100,10 @@ p{
     box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );
+    font-family: sans-serif;
 
 }
-#submit:hover{
+#botao:hover{
     background-color:darkslategray;
     transform: scale(1.2);
 }
