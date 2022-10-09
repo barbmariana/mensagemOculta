@@ -29,8 +29,10 @@
                 <fieldset>
                     <div id="metododiv">
                         <legend>Método Escolhido</legend>
-                        <label for="radio-cifra"> <input type="radio" value="cifradecesar" id="radio-cifra" name="metodo" onclick="incremento.style.display='inline'">Cifra de Cesar</label>
-                        <label for="radio-base64"> <input type="radio" value="base64" id="radio-base64" name="metodo" onclick="incremento.style.display='none'">Base 64</label>
+                        <input type="radio" value="cifradecesar" id="radio-cifra" name="metodo" onclick=desaparecer()>
+                        <label for="radio-cifra">Cifra de Cesar</label>
+                        <input type="radio" value="base64" id="radio-base64" name="metodo" onclick=desaparecer()>
+                        <label for="radio-base64"> Base 64</label>
                     </div>
                     <select name="incremento" id="incremento">
                         <option value="1">1</option>
@@ -48,9 +50,9 @@
 
             <!-- Onclick actions to change the button text -->
                 <fieldset id="codebox">
-                    <input type="radio"  value="codificar" id="codificador" name="code" onclick="botao.innerText='Codificando'">
+                    <input type="radio"  value="codificar" id="codificador" name="code" onclick=troca() checked>
                     <label for="codificador">Codificar</label>
-                    <input type="radio" value="decodificar" id="decodificador" name="code" onclick="botao.innerText='Decodificando'">
+                    <input type="radio" value="decodificar" id="decodificador" name="code" onclick=troca()>
                     <label for="decodificador"> Decodificar</label>
                     <button id="botao" > Codificar </button>            
                 </fieldset>
