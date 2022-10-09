@@ -24,6 +24,8 @@
         <form class="decode">
             <div id="caixa1">
                 <textarea name="message" id="message" cols="40" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            
+            <!-- Onclick actions to change the select box -->
                 <fieldset>
                     <div id="metododiv">
                         <legend>Método Escolhido</legend>
@@ -43,15 +45,16 @@
                     </select>
                 </fieldset>
             </div>
-            <fieldset id="codebox">
-                <input type="radio"  value="codificar" id="codificador" name="code" onclick="botao.innerText='Codificando'">
-                <label for="codificador">Codificar</label>
-                <input type="radio" value="decodificar" id="decodificador" name="code" onclick="botao.innerText='Decodificando'">
-                <label for="decodificador"> Decodificar</label>
-            <button id="botao" > Codificar </button>            
-        </fieldset>
 
-    
+            <!-- Onclick actions to change the button text -->
+                <fieldset id="codebox">
+                    <input type="radio"  value="codificar" id="codificador" name="code" onclick="botao.innerText='Codificando'">
+                    <label for="codificador">Codificar</label>
+                    <input type="radio" value="decodificar" id="decodificador" name="code" onclick="botao.innerText='Decodificando'">
+                    <label for="decodificador"> Decodificar</label>
+                    <button id="botao" > Codificar </button>            
+                </fieldset>
+
         <!-- Here go the decode text -->
             <div id="messagebox">
                 <p></p>    
