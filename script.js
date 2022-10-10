@@ -11,6 +11,8 @@ var incremento = document.getElementById('incremento');
     }
 }
 
+
+
 // // Função para trocar texto do botao
 
 function troca(){
