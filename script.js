@@ -1,3 +1,12 @@
+// Declarando variáveis e constantes
+
+// const alfabeto = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+// const input = document.querySelector('message')
+
+
+
+
+
 // // Função para sumir incremento
 
 function desaparecer(){
@@ -35,3 +44,5 @@ function mensagem(){
     document.getElementById('messagebox').innerText = mensagem
 }
 
+
+// Função Cifra de Cesar
