@@ -1,9 +1,9 @@
 // // Função para sumir incremento
 
 function desaparecer(){
-var cifraDeCesar = document.getElementById('radio-cifra')
-var base64 = document.getElementById('radio-base64')
-var incremento = document.getElementById('incremento')
+var cifraDeCesar = document.getElementById('radio-cifra');
+var base64 = document.getElementById('radio-base64');
+var incremento = document.getElementById('incremento');
     if(cifraDeCesar.checked){
         incremento.style.display="inline"
     } else if(base64.checked){
@@ -11,13 +11,13 @@ var incremento = document.getElementById('incremento')
     }
 }
 
-
 // // Função para trocar texto do botao
 
 function troca(){
 var botao = document.getElementById('botao');
 var codificar = document.getElementById('codificador');
 var decodificar = document.getElementById('decodificador');
+
     if(decodificar.checked){
         botao.innerText ='Decodificando'
     } else if(codificar.checked){
@@ -28,6 +28,8 @@ var decodificar = document.getElementById('decodificador');
 // Função para pegar mensagem inserida
 
 function mensagem(){
-    var mensagem = document.getElementById('message')
-    document.write.innerText(mensagem.value)
+    var m = document.getElementById('message');
+    var mensagem= String(m.value);
+    document.getElementById('messagebox').innerText = mensagem
 }
+
