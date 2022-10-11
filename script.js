@@ -1,18 +1,19 @@
 // Declarando variáveis e constantes
 
-// const alfabeto = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-// const input = document.querySelector('message')
-
-
-
+const alphabet = ['.','é','ú','ó','á','í','ã','ç','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];var cifraDeCesar = document.getElementById('radio-cifra');
+var base64 = document.getElementById('radio-base64');
+var incremento = document.getElementById('incremento');
+var botao = document.getElementById('botao');
+var codificar = document.getElementById('codificador');
+var decodificar = document.getElementById('decodificador');
+var m = document.getElementById('message');
+var mensagemCripto = document.getElementById('messagebox')
 
 
 // // Função para sumir incremento
 
 function desaparecer(){
-var cifraDeCesar = document.getElementById('radio-cifra');
-var base64 = document.getElementById('radio-base64');
-var incremento = document.getElementById('incremento');
+
     if(cifraDeCesar.checked){
         incremento.style.display="inline"
     } else if(base64.checked){
@@ -20,14 +21,9 @@ var incremento = document.getElementById('incremento');
     }
 }
 
-
-
 // // Função para trocar texto do botao
 
 function troca(){
-var botao = document.getElementById('botao');
-var codificar = document.getElementById('codificador');
-var decodificar = document.getElementById('decodificador');
 
     if(decodificar.checked){
         botao.innerText ='Decodificando'
@@ -38,11 +34,14 @@ var decodificar = document.getElementById('decodificador');
 
 // Função para pegar mensagem inserida
 
-function mensagem(){
-    var m = document.getElementById('message');
-    var mensagem= String(m.value);
-    document.getElementById('messagebox').innerText = mensagem
-}
-
+// function chegouMensagem(){
+//     caixa.innerText = mensagem
+// }
 
 // Função Cifra de Cesar
+
+function codificando(){
+    var arrayNcripto = m.value.split('');
+    console.log(arrayNcripto)
+
+}

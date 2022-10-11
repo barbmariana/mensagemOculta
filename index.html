@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');</style>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     
 </head>
 <body>
@@ -54,7 +54,7 @@
                     <label for="codificador">Codificar</label>
                     <input type="radio" value="decodificar" id="decodificador" name="code" onclick=troca()>
                     <label for="decodificador"> Decodificar</label>
-                    <button type="button" id="botao" onclick="mensagem()" > Codificar </button>            
+                    <button type="button" id="botao" onclick=codificando()> Codificar </button>            
                 </fieldset>
 
         <!-- Here go the decode text -->
