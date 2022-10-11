@@ -1,13 +1,17 @@
 // Declarando variáveis e constantes
 
-const alphabet = ['.','é','ú','ó','á','í','ã','ç','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];var cifraDeCesar = document.getElementById('radio-cifra');
+const alfabeto = ['.','é','ú','ó','á','í','ã','ç','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var cifraDeCesar = document.getElementById('radio-cifra');
 var base64 = document.getElementById('radio-base64');
 var incremento = document.getElementById('incremento');
 var botao = document.getElementById('botao');
 var codificar = document.getElementById('codificador');
 var decodificar = document.getElementById('decodificador');
 var m = document.getElementById('message');
-var mensagemCripto = document.getElementById('messagebox')
+var mensagemCaixa = document.getElementById('messagebox')
+var botaoMostra = document.getElementById('botaoMostra')
+
+
 
 
 // // Função para sumir incremento
@@ -21,6 +25,9 @@ function desaparecer(){
     }
 }
 
+
+
+
 // // Função para trocar texto do botao
 
 function troca(){
@@ -32,16 +39,41 @@ function troca(){
     }
 }
 
-// Função para pegar mensagem inserida
 
-// function chegouMensagem(){
-//     caixa.innerText = mensagem
-// }
+function codificando() {
+    var mensagem = m.value;
+    var mensagemM = mensagem.toLowerCase();
+    var numeroTroca = (Number(incremento.value) % 26);
+    var mensagemCripto = '';
 
-// Função Cifra de Cesar
+    if(cifraDeCesar.checked && codificar.checked){
+        for(var i = 0; i < mensagemM.length; i++){
+            for(var j =0; j < alfabeto.length; j++){
+            if(mensagemM[i] == alfabeto[j]){
+            mensagemCripto += alfabeto [j + numeroTroca]
+            break;
+        }   else if (mensagemM[i] == ' ') {
+            mensagemCripto += ' ';
+            break;}}
+        }
+        return mensagemCaixa.innerHTML=mensagemCripto
+        }
 
-function codificando(){
-    var arrayNcripto = m.value.split('');
-    console.log(arrayNcripto)
-
+        else if (cifraDeCesar.checked && decodificar.checked){
+        
+            for(var i = 0; i < mensagemM.length; i++){
+            for(var j = alfabeto.length - 1; j >= 0; j--){
+            if(mensagemM[i] == alfabeto[j]){
+            mensagemCripto += alfabeto [j - numeroTroca]
+            break;
+            }else if (mensagemM[i] == ' ') {
+            mensagemCripto += ' ';
+            break;
+        }
+        }
+      
+        }
+        return mensagemCaixa.innerHTML=mensagemCripto
+        } 
 }
+

@@ -108,6 +108,7 @@ p{
     transform: scale(1.2);
 }
 
+
 #messagebox{
     padding: 3px;
     padding-left: 20px;
@@ -122,4 +123,24 @@ p{
     color: white;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+#botaoMostra{
+    width: 70px;
+    font-size: 8px;
+    color: white;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 1s all;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    font-family: sans-serif;
+
+}
+#botaoMostra:hover{
+    background-color:darkslategray;
+    transform: scale(1.2);
 }
