@@ -12,8 +12,6 @@ var mensagemCaixa = document.getElementById('messagebox')
 var botaoMostra = document.getElementById('botaoMostra')
 
 
-
-
 // // Função para sumir incremento
 
 function desaparecer(){
@@ -24,9 +22,6 @@ function desaparecer(){
         incremento.style.display="none"
     }
 }
-
-
-
 
 // // Função para trocar texto do botao
 
@@ -39,6 +34,7 @@ function troca(){
     }
 }
 
+// Função para codificar
 
 function codificando() {
     var mensagem = m.value;
