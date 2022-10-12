@@ -45,31 +45,28 @@ function codificando() {
     if(cifraDeCesar.checked && codificar.checked){
         for(var i = 0; i < mensagemM.length; i++){
             for(var j =0; j < alfabeto.length; j++){
-            if(mensagemM[i] == alfabeto[j]){
-            mensagemCripto += alfabeto [j + numeroTroca]
-            break;
-        }   else if (mensagemM[i] == ' ') {
-            mensagemCripto += ' ';
-            break;}}
+                if(mensagemM[i] == alfabeto[j]){
+                    mensagemCripto += alfabeto [j + numeroTroca]
+                    break;
+                }else if (mensagemM[i] == ' '){
+                    mensagemCripto += ' ';
+                    break;}}
         }
-        return mensagemCaixa.innerHTML=mensagemCripto
-        }
+             return mensagemCaixa.innerHTML=mensagemCripto
 
-        else if (cifraDeCesar.checked && decodificar.checked){
+    } else if (cifraDeCesar.checked && decodificar.checked){
         
-            for(var i = 0; i < mensagemM.length; i++){
+        for(var i = 0; i < mensagemM.length; i++){
             for(var j = alfabeto.length - 1; j >= 0; j--){
-            if(mensagemM[i] == alfabeto[j]){
-            mensagemCripto += alfabeto [j - numeroTroca]
-            break;
-            }else if (mensagemM[i] == ' ') {
-            mensagemCripto += ' ';
-            break;
+                if(mensagemM[i] == alfabeto[j]){
+                mensagemCripto += alfabeto [j - numeroTroca]
+                break;
+            } else if (mensagemM[i] == ' ') {
+                mensagemCripto += ' ';
+                break;}
+            }
         }
-        }
-      
-        }
-        return mensagemCaixa.innerHTML=mensagemCripto
-        } 
+            return mensagemCaixa.innerHTML=mensagemCripto
+    } 
 }
 

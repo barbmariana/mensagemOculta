@@ -4,14 +4,21 @@ body{
     background-size: contain;
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 4px #000000;
+    background-image: url(./img/fundo.gif);
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
 }
 #content{
     width: 940px;
-    height:530px;
+    height: 530px;
+    border-radius: 100px;
     margin:50px auto;
-    background-image:url(./img/backg.png);
-    background-size: 940px;
+    background-image:url(./img/backg2.png);
+    background-size: cover;
+    background-color: #0739022d;
     display: flex;
     align-items: center;
     justify-content: center;
