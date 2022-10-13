@@ -1,7 +1,5 @@
 body{
     margin: 0;
-    background: linear-gradient(to right, hsl(0, 0%, 0%),hsl(0, 91%, 27%), hsl(0, 0%, 0%));
-    background-size: contain;
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 4px #000000;
     background-image: url(./img/fundo.gif);
@@ -14,11 +12,10 @@ body{
 #content{
     width: 940px;
     height: 530px;
-    border-radius: 100px;
     margin:50px auto;
     background-image:url(./img/backg2.png);
     background-size: cover;
-    background-color: #0739022d;
+    background-color:transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,23 +128,71 @@ p{
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#botaoMostra{
-    width: 70px;
-    font-size: 8px;
-    color: white;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    transition: 1s all;
-    border-radius: 20px;
-    background-color: transparent;
-    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    font-family: sans-serif;
 
-}
-#botaoMostra:hover{
-    background-color:darkslategray;
-    transform: scale(1.2);
+
+@media screen and (max-width:435px) {
+    #content{
+        width: 380px;
+        margin:100px auto;
+        background:none;
+    }
+    #info{
+        width: 300px;
+        color:white;
+    
+    }
+    h1{
+        font-size: 15px;
+        letter-spacing: 2px;
+    
+    }
+    h2{
+         font-size: 0.8em;
+         letter-spacing: 2px;
+    
+    }
+    p{
+        font-size: 0.6em;
+        letter-spacing: 2px;
+        line-height: 15px;
+    
+    
+    }
+    #caixa1{
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        color: white;
+        padding: 0 10px;
+    }
+    #incremento{
+        margin-bottom: -20px;
+    }
+
+    #codebox {
+        width: 300px;
+        color: white;
+        margin: 1px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #metododiv{
+        font-size: 0.5 em;
+        padding: 10px;
+    }
+
+
+
+    #messagebox{
+        padding: 3px;
+        padding-left: 20px;
+        width: 300px;
+        height: 300px;
+        margin: 8px auto;
+    }
 }
