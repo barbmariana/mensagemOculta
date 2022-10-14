@@ -76,7 +76,7 @@ function codificando() {
             return mensagemCaixa.innerHTML = emBase64
 
         } else if(base64.checked && decodificar.checked){
-            var emBase64 = atob(mensagemM)
+            var emBase64 = atob(mensagem)
             return mensagemCaixa.innerHTML = emBase64
     }
 }
