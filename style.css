@@ -133,7 +133,7 @@ p{
 @media screen and (max-width:435px) {
     #content{
         width: 380px;
-        margin:20px auto;
+        margin:200px auto;
         background:none;
     }
     #info{
@@ -174,8 +174,9 @@ p{
 
     #codebox {
         width: 300px;
+        height: 100px;
         color: white;
-        margin: 1px auto;
+        margin: 0px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -183,17 +184,15 @@ p{
     }
 
     #metododiv{
-        font-size: 0.5 em;
+        font-size: 0.5em;
         padding: 10px;
     }
-
-
 
     #messagebox{
         padding: 3px;
         padding-left: 20px;
         width: 300px;
-        height: 20px;
+        height: 200px;
         margin: 8px auto;
     }
 }
