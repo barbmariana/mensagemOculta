@@ -6,9 +6,8 @@ body{
     background-attachment: fixed, scroll;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
+
 #content{
     width: 940px;
     height: 530px;
@@ -22,6 +21,7 @@ body{
     flex-direction: column;
 
 }
+
 #info{
     display: flex;
     flex-direction: column;
@@ -31,16 +31,19 @@ body{
     color:white;
 
 }
+
 h1{
     font-size: 25px;
     letter-spacing: 2px;
 
 }
+
 h2{
      font-size: 15px;
      letter-spacing: 2px;
 
 }
+
 p{
     font-size: 10px;
     letter-spacing: 2px;
@@ -48,6 +51,7 @@ p{
 
 
 }
+
 #caixa1{
     width: 600px;
     display: flex;
@@ -56,6 +60,7 @@ p{
     color: white;
     padding: 5px 20px 20px 20px;
 }
+
 #caixa1 textarea{
     box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
     backdrop-filter: blur( 13.5px );
@@ -70,6 +75,7 @@ p{
     margin-left: 10px;
     border: none;
 }
+
 #caixa1 select{
     box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
     backdrop-filter: blur( 13.5px );
@@ -88,10 +94,12 @@ p{
     text-align: center;
     border: none;
 }
+
 #metododiv{
     font-size: 8px;
     margin-bottom: 10px;
 }
+
  #botao{
     width: 120px;
     color: white;
@@ -107,11 +115,11 @@ p{
     font-family: sans-serif;
 
 }
+
 #botao:hover{
     background-color:darkslategray;
     transform: scale(1.2);
 }
-
 
 #messagebox{
     padding: 3px;

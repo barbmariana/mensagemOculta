@@ -42,31 +42,44 @@ function codificando() {
     var numeroTroca = (Number(incremento.value) % 26);
     var mensagemCripto = '';
 
-    if(cifraDeCesar.checked && codificar.checked){
-        for(var i = 0; i < mensagemM.length; i++){
-            for(var j =0; j < alfabeto.length; j++){
-                if(mensagemM[i] == alfabeto[j]){
+        if(cifraDeCesar.checked && codificar.checked){
+            for(var i = 0; i < mensagemM.length; i++){
+                for(var j =0; j < alfabeto.length; j++){
+                    if(mensagemM[i] == alfabeto[j]){
                     mensagemCripto += alfabeto [j + numeroTroca]
                     break;
-                }else if (mensagemM[i] == ' '){
+                    } else if (mensagemM[i] == ' '){
                     mensagemCripto += ' ';
-                    break;}}
-        }
+                    break;
+                    }
+                    }
+            }
              return mensagemCaixa.innerHTML=mensagemCripto
 
-    } else if (cifraDeCesar.checked && decodificar.checked){
+        }else if (cifraDeCesar.checked && decodificar.checked){
         
-        for(var i = 0; i < mensagemM.length; i++){
-            for(var j = alfabeto.length - 1; j >= 0; j--){
-                if(mensagemM[i] == alfabeto[j]){
-                mensagemCripto += alfabeto [j - numeroTroca]
-                break;
-            } else if (mensagemM[i] == ' ') {
-                mensagemCripto += ' ';
-                break;}
-            }
+            for(var i = 0; i < mensagemM.length; i++){
+                for(var j = alfabeto.length - 1; j >= 0; j--){
+                    if(mensagemM[i] == alfabeto[j]){
+                    mensagemCripto += alfabeto [j - numeroTroca]
+                    break;
+                    } else if (mensagemM[i] == ' ') {
+                    mensagemCripto += ' ';
+                    break;
+                    }
+                }
         }
             return mensagemCaixa.innerHTML=mensagemCripto
-    } 
+
+        } else if(base64.checked && codificar.checked){
+            var emBase64=btoa(mensagemM)
+            return mensagemCaixa.innerHTML = emBase64
+
+        } else if(base64.checked && decodificar.checked){
+            var emBase64 = atob(mensagemM)
+            return mensagemCaixa.innerHTML = emBase64
+    }
 }
+
+
 
