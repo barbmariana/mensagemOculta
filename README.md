@@ -18,5 +18,5 @@ For this project, we had to build an encoder calculator using JavaScript.
 
 ## The project
 
-![image] (https://github.com/barbmariana/mensagemOculta/blob/main/img/imagem%20mensagem%20secreta%202.png)
+![image](https://github.com/barbmariana/mensagemOculta/blob/main/img/imagem%20mensagem%20secreta%202.png)
 
