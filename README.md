@@ -1,4 +1,4 @@
-# Mensagem Oculta - Secrate Message 💻	
+# Mensagem Oculta - Secret Message 💻	
 Encoder calculator - Caesar's cipher and Base64. This was the second individual project for Resilia Full Stack Webdeveloper bootcamp.
 
 
