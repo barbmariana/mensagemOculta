@@ -1,6 +1,6 @@
-# Mensagem Oculta - Secret Message 💻	
-Encoder calculator - Caesar's cipher and Base64. This was the second individual project for Resilia Full Stack web developer bootcamp.
-
+#Secret Message 💻	
+Hi. Welcome to my repository. 
+Here you can find a encoder calculator - Caesar's cipher and Base64.
 
 ## Project Goal 📍
 For this project, we had to build an encoder calculator using JavaScript.
